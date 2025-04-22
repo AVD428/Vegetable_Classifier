@@ -1,36 +1,44 @@
-# Vegetable_Classifier
-Title Page
-Problem Statement: Build a machine learning model to classify vegetables into categories based on their nutritional content (e.g., high protein, high fiber, low calorie, etc.).
-Name: Aviral Dixit
-Roll Number: 202401100300081
-Course: Artificial Intelligence
-Date: 22/04/2025
+# Vegetable Classification Based on Nutritional Content 🥦🥕🍅
 
-Introduction
-This project aims to classify vegetables based on their nutritional profiles into various health categories such as high protein, high fiber, low calorie, etc. This classification can help consumers and dietitians make informed food choices and design personalized diets. We use a dataset consisting of various vegetables with nutritional values such as calories, proteins, carbs, fats, and fiber.
+## 📌 Project Overview
 
-Methodology
+This project aims to classify vegetables into nutritional categories such as **High Protein**, **High Fiber**, or **Low Calorie**, using machine learning algorithms. It demonstrates data preprocessing, model training, and evaluation using Python and scikit-learn.
 
-Dataset:
+## 🧠 Problem Statement
 
-1. The dataset contains nutritional information (in grams or kcal per 100g) of a variety of vegetables.
+Given the nutritional values of various vegetables (e.g., calories, protein, carbohydrates, fat, fiber), the goal is to predict their health category.
 
-2. Features include: Calories, Protein, Carbohydrates, Fat, Fiber, etc.
+---
 
-3. Labels include: High Protein, Low Calorie, High Fiber, etc.
+## 📊 Dataset
 
-Preprocessing:
+- Format: CSV
+- Features:
+  - `Calories`
+  - `Protein`
+  - `Carbohydrates`
+  - `Fat`
+  - `Fiber`
+- Target:
+  - `Category` (e.g., High Protein, Low Calorie, High Fiber)
 
-1. Cleaned null values.
+> Make sure to place the dataset as `vegetables_nutrition.csv` in your working directory.
 
-2. Normalized feature values to bring them to a common scale.
+---
 
-3. Encoded categorical labels using LabelEncoder.
+## ⚙️ Tech Stack
 
-Model:
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- Matplotlib (optional for visualization)
 
-1. Used a Random Forest Classifier due to its robustness and interpretability.
+---
 
-2. Performed train-test split with 80-20 ratio.
+## 🚀 How to Run
 
-3. Used accuracy and confusion matrix as evaluation metrics.
+1. Clone the repo or download the code.
+2. Install the dependencies:
+   ```bash
+   pip install pandas scikit-learn numpy
